@@ -1,0 +1,117 @@
+:root{
+    --primary: #20344B;
+    --secondary: #B0393F;
+    --neutral: whitesmoke;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--neutral);
+
+    & header{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        color: var(--secondary);
+        margin: 1rem;
+        text-align: center;
+        border-bottom: 2px solid var(--secondary);
+        border-left: 50rem solid var(--neutral);
+        border-right: 50rem solid var(--neutral);
+        padding-bottom: 1rem;
+
+        & img{
+            height: 8rem;
+        }
+    }
+
+    & main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /* flex-wrap: wrap; */
+        /* gap: 1rem; */
+        width: 100vw;
+        height: 100vh;
+        margin-top: 3rem;
+
+        & .calc {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            /* padding: .5rem; */
+            border-bottom: 2px solid var(--secondary);
+            /* border-radius: 2rem; */
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary);
+
+            & h3{
+                padding-bottom: rem;
+                margin-bottom: 1.5rem;
+            }
+
+            & form{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: .5rem;
+                border-top: .2rem solid var(--secondary);
+                padding: 1rem 0;
+            }
+        }
+
+        & .wrapper  {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            width: 100%;
+
+            & .part-wrapper{
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                gap: 1rem;
+
+
+                & select {
+                    align-self: flex-end;
+                }
+            }
+
+            & p{
+                margin-left: 1rem;
+                padding-left: 1rem;
+                border-left: 2px solid var(--secondary);
+                font-size: large;
+                font-weight: 500;
+                color: var(--primary);
+                align-self: flex-end;
+                text-align: right;
+            }
+
+        }
+        
+        & .total{
+            color: var(--secondary);
+            text-transform: uppercase;
+            margin-top: 2rem;
+            text-align: right;
+        }
+    }
+
+}
